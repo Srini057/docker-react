@@ -25,8 +25,8 @@ jobs:
           AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}      
         with:
-          aws_access_key: "$AWS_ACCESS_KEY"
-          aws_secret_key: "$AWS_SECRET_KEY"
+          aws_access_key: AKIAYLZZKH6JNV6FEEXR
+          aws_secret_key: aNi6ZVeRjW3BUg14RK4cq8T+cpB59uckQ9s9tXX
           application_name: frontend1
           environment_name: Frontend-env-2
           existing_bucket_name: elasticbeanstalk-ap-south-1-575108956050
