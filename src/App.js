@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          running with docker compose 111
+          learn react with Docker and AWS
         </a>
       </header>
     </div>
