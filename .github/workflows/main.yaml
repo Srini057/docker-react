@@ -24,8 +24,8 @@ jobs:
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v18
         with:
-          aws-access-key-id: "$AWS_ACCESS_KEY"
-          aws-secret-access-key: "$AWS_SECRET_KEY"
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
           application_name: frontend1
           environment_name: Frontend-env-2
           existing_bucket_name: elasticbeanstalk-ap-south-1-575108956050
