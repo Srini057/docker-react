@@ -22,9 +22,8 @@ jobs:
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v18
         env:
-          AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
-          AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
-          AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}        
+          AWS_ACCESS_KEY: AKIAYLZZKH6JPEGUS7XI
+          AWS_SECRET_KEY: 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      
         with:
           aws_access_key: "$AWS_ACCESS_KEY"
           aws_secret_key: "$AWS_SECRET_KEY"
