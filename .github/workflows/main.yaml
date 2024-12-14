@@ -23,10 +23,12 @@ jobs:
         uses: einaregilsson/beanstalk-deploy@v18
         env:
           AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
-          AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}        
+          AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
+          AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}        
         with:
           aws_access_key: "$AWS_ACCESS_KEY"
           aws_secret_key: "$AWS_SECRET_KEY"
+          aws_session_token: "$AWS_SESSION_TOKEN"
           application_name: frontend1
           environment_name: Frontend-env-2
           existing_bucket_name: elasticbeanstalk-ap-south-1-575108956050
